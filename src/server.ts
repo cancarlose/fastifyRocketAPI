@@ -1,5 +1,5 @@
 import fastify from 'fastify'
-import { env } from './env'
+import { env } from './env/index.zod'
 import { transactionsRoutes } from './routes/transactions'
 
 const app = fastify()
