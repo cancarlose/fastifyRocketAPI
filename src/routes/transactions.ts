@@ -17,7 +17,7 @@ export async function transactionsRoutes(app: FastifyInstance) {
       request.body,
     )
 
-    await knex('transations').insert({
+    await knex('transactions').insert({
       id: randomUUID(),
       title,
       amount: type === 'credit' ? amount : amount * -1,
