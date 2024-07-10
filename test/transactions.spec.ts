@@ -1,6 +1,6 @@
 import { test, beforeAll, afterAll } from 'vitest'
 import request from 'supertest'
-import { app } from '.././src/app'
+import { app } from '../src/app'
 
 beforeAll(async () => {
   await app.ready()
